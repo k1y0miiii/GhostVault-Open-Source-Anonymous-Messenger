@@ -1,0 +1,8 @@
+requests
+pytz
+PySimpleGUI
+psycopg2
+pyperclip
+cryptography
+Pillow
+playsound
