@@ -1,69 +1,71 @@
-# GhostVault: Анонимный Мессенджер с Открытым Исходным Кодом
+# GhostVault: Open-Source Anonymous Messenger
 
-**GhostVault** — анонимный мессенджер с открытым исходным кодом, предоставляющий пользователям безопасное пространство для коммуникации с полным контролем над данными и подключениями.
+**English** · [Русский](README.ru.md)
 
-🔗 **[Скачать GhostVault](https://github.com/k1y0miiii/GhostVault-Open-Source-Anonymous-Messenger/releases/tag/v1.0.0)**
+**GhostVault** is an open-source anonymous messenger that gives users a secure space to communicate, with full control over their data and connections.
 
-## 🚀 Основные Возможности
+🔗 **[Download GhostVault](https://github.com/k1y0miiii/GhostVault-Open-Source-Anonymous-Messenger/releases/tag/v1.0.0)**
 
-- **Подключение к вашему серверу:** После установки приложение автоматически инициализирует необходимые таблицы и данные для мгновенного старта.
-- **Гибкая настройка шифрования:** Меняйте ключи шифрования прямо из интерфейса приложения для повышения безопасности(скоро будет...).
-- **Интерактивный пользовательский интерфейс:** Удобные формы регистрации, авторизации и управления аккаунтом делают использование приложения простым и интуитивным.
-- **Безопасность и конфиденциальность:** Разработан с приоритетом на защиту переписки и данных пользователей.
-- **Совместный доступ к базе данных:** Предоставляйте доступ к вашей базе данных другим пользователям при необходимости. После того как вы подключились и создали базу данных, вы можете поделиться ключом доступа. Нажмите на кнопку **[`Подключиться к базе данных`](#)**, скопируйте зашифрованный ключ и передайте его другим пользователям.
+## 🚀 Key Features
+
+- **Connect to your own server:** After installation, the app automatically initializes the tables and data it needs so you can start right away.
+- **Flexible encryption settings:** Change encryption keys directly from the app's interface for extra security (coming soon...).
+- **Interactive UI:** Convenient registration, login, and account-management forms make the app simple and intuitive to use.
+- **Security and privacy:** Built with protecting users' conversations and data as the top priority.
+- **Shared database access:** Grant other users access to your database when needed. Once you've connected and created a database, you can share an access key. Click the **[`Connect to database`](#)** button, copy the encrypted key, and pass it to other users.
 
 
-## 🛠️ Технологии
+## 🛠️ Technologies
 
-- **Python** — для логики приложения.
-- **PySimpleGUI** — для создания графического интерфейса.
-- **PostgreSQL** — для управления базой данных.
+- **Python** — application logic.
+- **PySimpleGUI** — graphical user interface.
+- **PostgreSQL** — database management.
 
-## 🏁 Начало Работы
+## 🏁 Getting Started
 
-### 📥 Установка
+### 📥 Installation
 
-1. **Скачайте и установите приложение:**
-   - Перейдите в раздел [Releases](https://github.com/k1y0miiii/GhostVault-Open-Source-Anonymous-Messenger/releases/tag/v1.0.0) репозитория на GitHub.
-   - Скачайте последний релиз `GhostVaultSETUP.exe`.
-   - Запустите установщик и следуйте инструкциям для установки на ваш компьютер.
+1. **Download and install the app:**
+   - Go to the [Releases](https://github.com/k1y0miiii/GhostVault-Open-Source-Anonymous-Messenger/releases/tag/v1.0.0) section of the repository on GitHub.
+   - Download the latest release, `GhostVaultSETUP.exe`.
+   - Run the installer and follow the instructions to install it on your computer.
 
-### 🖥️ Разработка и Внесение Изменений
+### 🖥️ Development and Contributing
 
-2. **Клонируйте репозиторий:**
-   - Убедитесь, что Git установлен на вашем компьютере.
-   - Откройте терминал и выполните команду:
+2. **Clone the repository:**
+   - Make sure Git is installed on your machine.
+   - Open a terminal and run:
      ```bash
      git clone https://github.com/k1y0miiii/GhostVault-Open-Source-Anonymous-Messenger.git
      ```
 
-3. **Установите зависимости:**
-   - Убедитесь, что у вас установлен Python.
-   - В директории проекта выполните:
+3. **Install the dependencies:**
+   - Make sure Python is installed.
+   - In the project directory, run:
      ```bash
      pip install -r requirements.txt
      ```
 
-4. **Настройте среду разработки:**
-   - Рекомендуется использовать IDE, такую как **PyCharm** или **Visual Studio Code**.
+4. **Set up your development environment:**
+   - An IDE such as **PyCharm** or **Visual Studio Code** is recommended.
 
-5. **Запустите и протестируйте приложение:**
-   - Выполните в терминале:
+5. **Run and test the app:**
+   - In the terminal, run:
      ```bash
      python GhostVault.py
      ```
 
-## 🔧 Компиляция в EXE
+## 🔧 Building an EXE
 
-Если вам нужно скомпилировать проект в исполняемый `.exe` файл для Windows, используйте **PyInstaller**.
+If you need to compile the project into a Windows `.exe`, use **PyInstaller**.
 
-**Установите PyInstaller:**
+**Install PyInstaller:**
 
 ```bash
 pip install pyinstaller
 ```
 
-**Выполните следующую команду для сборки `.exe`:**
+**Run the following command to build the `.exe`:**
 
 ```bash
 pyinstaller --onefile --noconsole --icon="icon.ico" \
@@ -74,32 +76,32 @@ pyinstaller --onefile --noconsole --icon="icon.ico" \
 GhostVault.py
 ```
 
-После успешной компиляции исполняемый файл будет находиться в папке `dist/`.
+After a successful build, the executable will be in the `dist/` folder.
 
 
-### 🤝 Вклад в Проект
+### 🤝 Contributing
 
-6. **Создайте Pull Request:**
-   - Создайте новую ветку для ваших изменений:
+6. **Open a Pull Request:**
+   - Create a new branch for your changes:
      ```bash
-     git checkout -b feature/имя-вашей-ветки
+     git checkout -b feature/your-branch-name
      ```
-   - После внесения изменений выполните коммит и отправьте изменения:
+   - After making changes, commit and push them:
      ```bash
      git add .
-     git commit -m "Описание ваших изменений"
-     git push origin feature/имя-вашей-ветки
+     git commit -m "Description of your changes"
+     git push origin feature/your-branch-name
      ```
-   - Откройте Pull Request на GitHub и опишите внесённые изменения.
+   - Open a Pull Request on GitHub and describe what you changed.
 
-## 📫 Контакты
+## 📫 Contact
 
-Если у вас есть предложения или вопросы, пожалуйста, создайте тему в разделе **Issues** на GitHub или отправьте письмо на наш [email](mailto:ghostvaultmessenger@gmail.com).
+If you have suggestions or questions, please open a thread in the **Issues** section on GitHub or email us at [email](mailto:ghostvaultmessenger@gmail.com).
 
-## 📄 Лицензия
+## 📄 License
 
-Проект распространяется под лицензией **MIT** — подробности смотрите в файле [LICENSE](LICENSE) в репозитории.
+This project is distributed under the **MIT** license — see the [LICENSE](LICENSE) file in the repository for details.
 
 ---
 
-**GhostVault** стремится обеспечить максимальную безопасность и удобство общения. Мы рады любому вкладу в развитие проекта и будем благодарны за ваши отзывы и предложения!
+**GhostVault** aims to deliver maximum security and a comfortable communication experience. We welcome any contribution to the project and appreciate your feedback and suggestions!
